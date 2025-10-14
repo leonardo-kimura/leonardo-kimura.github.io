@@ -305,74 +305,83 @@ img{
 }
 
 
-/* deixar tela responsiva*/
-@media (max-width: 768px) {
-
-   
-    .container, 
-    .sobremim-conteudo, 
-    .qualificacao .container-secao, 
-    .habilidades .container-secao { 
-        width: 90%;
+/* Deixar a tela responsiva*/
+@media (max-width: 1024px) {
+    .container, .container-secao, .sobremim-conteudo {
+        width: 95%;
+        padding: 0 10px;
     }
+}
 
+@media (max-width: 768px) {
     header {
         height: auto;
-        padding: 15px 0;
-        position: static;
-    }
-
-    header .container {
         flex-direction: column;
-        height: auto;
     }
-
+    .container, .container-secao {
+        width: 100%;
+        padding: 0 10px;
+    }
     .logo {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
-
-    nav ul {
+    .menu ul {
         flex-direction: column;
-        width: 100%;
-        gap: 8px;
+        gap: 10px;
+        padding: 0;
     }
-
-    nav li {
-        width: 100%;
-        text-align: center;
-        background-color: #4a588f;
-        border: 1px solid #5a67a3;
-    }
-
-    .inicio h1 {
-        font-size: 48px; 
-        text-align: center;
-    }
-    
     .sobremim-conteudo {
-        flex-direction: column; 
-        text-align: center;
-        gap: 30px;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0;
     }
-    
-    .sobremim-texto {
-        text-align: center; 
-        align-items: center;
-    }
-
     .sobremim-conteudo img {
-        width: 200px; 
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
-
-    
     .qualificacoes-conteudo {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        gap: 20px;
         width: 100%;
     }
+    .container-habilidade {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .cards {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto 10px auto;
+    }
+    .contato {
+        padding: 20px 5px;
+    }
+}
 
-    .subsecao {
-        width: 100%; 
+@media (max-width: 480px) {
+    .inicio h1 {
+        font-size: 2em;
+    }
+    .sobremim h2, .qualificacao h2, .habilidades h2 {
+        font-size: 1.5em;
+    }
+    .sobremim-conteudo img {
+        width: 100px;
+        height: 100px;
+    }
+    .cards {
+        font-size: 1em;
+        padding: 10px 10px;
+    }
+    .contato i {
+        font-size: 24px;
+        padding: 5px;
+    }
+    .circulo {
+        width: 50px;
+        height: 50px;
+        font-size: 1em;
     }
 }
