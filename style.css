@@ -306,34 +306,67 @@ img{
 
 
 /* deixar tela responsiva*/
-@media (max-width: 768px){
+@media (max-width: 768px)   {
 
 .container, .sobremim-conteudo, .qualificacao, .habilidades, .container-secao {
         width: 90%;
     }
-header .container{
+header .container   {
     flex-direction: column;
     height: auto;
 }
 
-header{
+header  {
     height: auto;
     padding: 10px 0;
 }
 
-.logo{
+.logo   {
     margin-bottom: 10px;
 }
 
-nav ul{
+nav ul  {
     flex-direction: column;
     width: 100%;
     gap: 5px;
 }
 
-nav li{
+nav li  {
     width: 100%;
     text-align: center;
     background-color: #4a588f;
 }
+.inicio h1 {
+        font-size: 48px; 
+    }
+
+   
+.sobremim-conteudo {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+.sobremim-texto {
+        text-align: center; 
+        align-items: center;
+    }
+
+.sobremim-destaques {
+        align-items: flex-start; 
+    }
+
+img {
+        width: 200px; 
+        height: 200px;
+    }
+
+    
+.qualificacoes-conteudo {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+.subsecao {
+        width: 100%; 
+    }
 }
